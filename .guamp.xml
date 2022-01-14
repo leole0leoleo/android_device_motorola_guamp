@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<manifest>
+
+  <project path="device/motorola/guamp" name="snjy4/android_device_motorola_guamp" remote="github" revision="main" />
+
+</manifest>
