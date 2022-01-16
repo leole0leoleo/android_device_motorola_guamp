@@ -1,9 +1,0 @@
-jobs:
-   build:
-    docker:
-      - image: cimg/base:stable
-    steps:
-      - checkout
-      - run:
-          name: "Build"
-          command: curl https://raw.githubusercontent.com/snjy4/android_device_motorola_guamp/main/.build.sh | bash
