@@ -5,7 +5,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 $(call inherit-product-if-exists, $(SRC_TARGET_DIR)/product/embedded.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
-#$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 DEVICE_PATH := device/motorola/guamp
 BOARD_BUILD_PRODUCT_IMAGE := false
@@ -19,7 +19,7 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 TARGET_SCREEN_HEIGHT := 1600
 TARGET_SCREEN_WIDTH := 720
 
-# $(call inherit-product-if-exists, vendor/motorola/guamp/guamp-vendor.mk)
+$(call inherit-product-if-exists, vendor/motorola/guamp/guamp-vendor.mk)
 
 PRODUCT_HOST_PACKAGES += \
     libbluetooth
