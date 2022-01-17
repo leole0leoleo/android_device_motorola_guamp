@@ -9,7 +9,7 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 DEVICE_PATH := device/motorola/guamp
 BOARD_BUILD_PRODUCT_IMAGE := false
-BOARD_BUILD_VENDOR_IMAGE := false
+BOARD_BUILD_VENDOR_IMAGE := true
 BOARD_SYSTEMSDK_VERSIONS := 29
 PRODUCT_BUILD_SUPER_PARTITION := false
 PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
