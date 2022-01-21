@@ -37,4 +37,4 @@ cd ~/android/lineage &&\
 source build/envsetup.sh &&\
 lunch lineage_guamp-userdebug &&\
 croot &&\
-mka bacon
+make -j$(nproc --all) 
