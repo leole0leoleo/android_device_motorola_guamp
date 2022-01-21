@@ -22,7 +22,8 @@ PRODUCT_SOONG_NAMESPACES += $(DEVICE_PATH)
 $(call inherit-product-if-exists, vendor/motorola/guamp/guamp-vendor.mk)
 
 PRODUCT_HOST_PACKAGES += \
-    libbluetooth
+    libbluetooth \
+    libbluetooth_qti
     
 PRODUCT_COPY_FILES += \
 $(DEVICE_PATH)/rootdir/system/lib/libbluetooth.so:system/lib/libbluetooth.so \
