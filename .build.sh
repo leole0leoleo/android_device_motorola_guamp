@@ -36,5 +36,5 @@ repo sync -j$(nproc --all) -c -j$(nproc --all) --force-sync --no-clone-bundle --
 cd ~/android/lineage &&\
 source build/envsetup.sh &&\
 lunch lineage_guamp-userdebug &&\
-croot &&\
+export TZ=Asia/Kolkata &&\
 m -j$(nproc --all) all
