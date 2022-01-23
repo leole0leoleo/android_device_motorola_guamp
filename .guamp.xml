@@ -3,5 +3,6 @@
 <manifest>
 
   <project path="device/motorola/guamp" name="snjy4/android_device_motorola_guamp" remote="github" revision="main" />
+          <project path="kernel/motorola/guamp" name="snjy4/kernel_motorola_guamp" remote="github" revision="main"/>
 
 </manifest>
