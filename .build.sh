@@ -30,11 +30,11 @@ ccache -M 50G &&\
 ccache -o compression=true &&\
 
 cd ~/android/lineage &&\
-repo init --depth=1 --no-repo-verify -u https://github.com/LineageOS/android.git -b lineage-18.1 &&\
+repo init --depth=1 --no-repo-verify -u https://github.com/LineageOS/android.git -b lineage-18.1 -g default,-mips,-darwin,-notdefault &&\
 curl https://raw.githubusercontent.com/snjy4/android_device_motorola_guamp/main/.guamp.xml -o .repo/local_manifests/guamp.xml &&\
 repo sync -j$(nproc --all) -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags --optimized-fetch --prune &&\
 cd ~/android/lineage &&\
 source build/envsetup.sh &&\
 lunch lineage_guamp-userdebug &&\
 croot &&\
-brunch guamp
+m -j$(nproc --all) all
