@@ -21,5 +21,4 @@ PRODUCT_HOST_PACKAGES += \
     
 PRODUCT_COPY_FILES += \
 $(DEVICE_PATH)/rootdir/system/lib/libbluetooth.so:system/lib/libbluetooth.so \
-$(DEVICE_PATH)/rootdir/system/lib/libbluetooth_qti.so:system/lib/libbluetooth_qti.so \
 $(DEVICE_PATH)/rootdir/system/etc/apns-conf.xml:system/etc/apns-conf.xml
