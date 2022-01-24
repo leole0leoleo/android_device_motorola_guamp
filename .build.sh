@@ -37,4 +37,4 @@ cd ~/android/lineage &&\
 source build/envsetup.sh &&\
 lunch lineage_guamp-userdebug &&\
 export TZ=Asia/Kolkata &&\
-m -j$(nproc --all) all
+m -j$(nproc --all) droid
