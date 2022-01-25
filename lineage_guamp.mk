@@ -15,9 +15,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 PRODUCT_NAME := lineage_guamp
 PRODUCT_DEVICE := guamp
 PRODUCT_BRAND := motorola
-PRODUCT_MODEL := motorola
+PRODUCT_MODEL := motorola g(9) play
 PRODUCT_MANUFACTURER := motorola
-PRODUCT_RELEASE_NAME := motorola
 PRODUCT_GMS_CLIENTID_BASE := android-motorola
 
 ifneq ($(SIGN_BUILD),true)
