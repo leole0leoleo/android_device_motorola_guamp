@@ -70,6 +70,9 @@ BOARD_QTI_DYNAMIC_PARTITIONS_PARTITION_LIST := \
     product \
     vendor
 
+# Display DPI
+TARGET_SCREEN_DENSITY := 411
+
 # Drm
 TARGET_ENABLE_MEDIADRM_64 := true
 
