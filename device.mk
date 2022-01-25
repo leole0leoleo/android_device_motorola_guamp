@@ -22,3 +22,7 @@ PRODUCT_HOST_PACKAGES += \
 PRODUCT_COPY_FILES += \
 $(DEVICE_PATH)/rootdir/system/lib/libbluetooth.so:system/lib/libbluetooth.so \
 $(DEVICE_PATH)/rootdir/system/etc/apns-conf.xml:system/etc/apns-conf.xml
+
+PRODUCT_PACKAGES += \
+     android.hardware.sensors@1.0-impl \
+     android.hardware.sensors@1.0-service
