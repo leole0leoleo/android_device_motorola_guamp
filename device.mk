@@ -13,7 +13,7 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 TARGET_SCREEN_HEIGHT := 1600
 TARGET_SCREEN_WIDTH := 720
 PRODUCT_SOONG_NAMESPACES += $(DEVICE_PATH)
-$(call inherit-product-if-exists, vendor/motorola/guamp/guamp-vendor.mk)
+$(call inherit-product, vendor/motorola/guamp/guamp-vendor.mk)
 
 PRODUCT_HOST_PACKAGES += \
     libbluetooth \
