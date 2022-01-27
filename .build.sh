@@ -1,8 +1,8 @@
 #!/bin/bash
-export PATH=~/bin/:$PATH && \
-export ALLOW_MISSING_DEPENDENCIES=true && \
-export USE_CCACHE=1 && \
-export CCACHE_EXEC=/usr/bin/ccache && \
+export PATH=$HOME/bin:$PATH
+export ALLOW_MISSING_DEPENDENCIES=true
+export USE_CCACHE=1
+export CCACHE_EXEC=/usr/bin/ccache
 sudo apt update && sudo apt install -y bc bison build-essential ccache curl \
 flex g++-multilib gcc-multilib git gnupg gperf imagemagick lib32ncurses5-dev \
 lib32readline-dev lib32z1-dev liblz4-tool libncurses5 libncurses5-dev \
@@ -29,5 +29,5 @@ repo sync -j$(nproc --all) -c -j$(nproc --all) --force-sync --no-clone-bundle --
 cd ~/android/lineage && \
 source build/envsetup.sh && \
 lunch lineage_guamp-userdebug && \
-export TZ=Asia/Kolkata && \
+export TZ=Asia/Kolkata
 m -j$(nproc --all) droid
