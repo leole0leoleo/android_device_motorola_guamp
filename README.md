@@ -1,4 +1,3 @@
-# android_device_motorola_guamp
 Device configuration for Moto G9/ G9 Play (guamp)
 ==================================================
 
